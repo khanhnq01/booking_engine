@@ -1,4 +1,4 @@
-package com.work.bookingengine.respone;
+package com.work.bookingengine.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,7 +9,7 @@ import java.time.LocalDate;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class BookedRoomRespone {
+public class BookedRoomResponse {
     private Long bookingId;
     private LocalDate checkInDate;
     private LocalDate checkOutDate;
@@ -19,10 +19,10 @@ public class BookedRoomRespone {
     private int NumberOfChilren;
     private int totalNumberOfGuest;
     private String bookingConfirmationCode;
-    private RoomRespone room;
+    private RoomResponse room;
 
-    public BookedRoomRespone(Long bookingId, LocalDate checkInDate,
-                             LocalDate checkOutDate, String bookingConfirmationCode) {
+    public BookedRoomResponse(Long bookingId, LocalDate checkInDate,
+                              LocalDate checkOutDate, String bookingConfirmationCode) {
         this.bookingId = bookingId;
         this.checkInDate = checkInDate;
         this.checkOutDate = checkOutDate;
