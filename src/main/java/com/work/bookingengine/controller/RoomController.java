@@ -56,9 +56,11 @@ public class RoomController {
 
     private RoomResponse getRoomResponse(Room room) {
         List<BookedRoom> bookedRoomList = getAllBookingsByRoomId(room.getId());
+        return null;
     }
 
     private List<BookedRoom> getAllBookingsByRoomId(Long id) {
 
+        return null;
     }
 }
